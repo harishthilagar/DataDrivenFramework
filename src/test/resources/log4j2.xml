@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="logfile">reports/log/testAutomationLog.log</Property>
+	</Properties>
+	<Appenders>
+		<File name="File" filename="${logfile}">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %-5level  %C-%M  - %m%n" />
+		</File>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss} %-5level  %C-%M  - %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>
