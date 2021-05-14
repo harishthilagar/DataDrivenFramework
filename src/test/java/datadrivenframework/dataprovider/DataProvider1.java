@@ -11,12 +11,14 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
+import datadrivenframework.constants.UIconstants;
+
 public class DataProvider1 {
 
 	FileInputStream fis;
 	XSSFWorkbook wb;
 	XSSFSheet ws;
-	String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\TestData.xlsx";
+	String filePath = UIconstants.USER_DIR + "\\src\\test\\resources\\testdata\\TestData.xlsx";
 	LinkedList<LinkedList<String>> addressList;
 	
     @DataProvider(name ="addressDataProvider")
@@ -26,7 +28,6 @@ public class DataProvider1 {
 			fis = new FileInputStream(filePath);
 			wb = new XSSFWorkbook(fis);
 			int noOfSheets = wb.getNumberOfSheets();
-			System.out.println(noOfSheets);
 			for (int i = 0; i < noOfSheets; i++) {
 				ws = wb.getSheetAt(i);
 				if (ws.getSheetName().equalsIgnoreCase("Addresses")) {

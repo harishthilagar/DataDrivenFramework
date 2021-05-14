@@ -5,34 +5,40 @@ import java.util.LinkedList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import datadrivenframework.dataprovider.DataProvider1;
 import datadrivenframework.factory.DriverFactory;
 import datadrivenframework.factory.PageProvider;
+import datadrivenframework.listeners.TestListener;
 import datadrivenframework.pageobjects.AddAddress;
 import datadrivenframework.pageobjects.AddressPage;
 import datadrivenframework.pageobjects.HomePage;
 import datadrivenframework.pageobjects.LoginPage;
 
+@Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
 	WebDriver driver;
 	PageProvider provider;
 	public static final Logger logger=LogManager.getLogger(LoginTest.class);
 
 	@BeforeClass
-	public void setup() {
-		driver = DriverFactory.getDriver();
+	public void setup(ITestContext context) {
+        driver = DriverFactory.getDriver();
 		provider = new PageProvider(driver);
+		context.setAttribute("driver", driver);
 	}
 
 	@Test(priority = 1)
 	public void loginTest() {
 		HomePage homepage = provider.getHomePage();
 		homepage.signIn();
-		logger.info("signin button clicked");
+		logger.info("login test start");
 	}
 
 	@Test(priority = 2)
@@ -68,8 +74,7 @@ public class LoginTest extends BaseTest {
 	
 	@AfterClass
 	public void tearDown() {
-		driver.close();
-		driver.quit();
+         closeDriver(driver);
 	}
 
 }

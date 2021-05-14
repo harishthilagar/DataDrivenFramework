@@ -2,28 +2,35 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-11T15:12:20 IST" name="Default suite" finished-at="2021-05-11T15:13:01 IST" duration-ms="41181">
+  <suite started-at="2021-05-14T22:05:11 IST" name="Default suite" finished-at="2021-05-14T22:05:49 IST" duration-ms="38360">
     <groups>
     </groups>
-    <test started-at="2021-05-11T15:12:20 IST" name="Default test" finished-at="2021-05-11T15:13:01 IST" duration-ms="41181">
+    <test started-at="2021-05-14T22:05:11 IST" name="Default test" finished-at="2021-05-14T22:05:49 IST" duration-ms="38360">
       <class name="datadrivenframework.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:20 IST" name="setup" finished-at="2021-05-11T15:12:35 IST" duration-ms="14972" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:11 IST" name="setup" finished-at="2021-05-14T22:05:25 IST" duration-ms="13921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3cf55e0c]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:35 IST" name="loginTest" finished-at="2021-05-11T15:12:35 IST" duration-ms="513" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:25 IST" name="loginTest" finished-at="2021-05-14T22:05:25 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="signinTest()[pri:2, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:35 IST" name="signinTest" finished-at="2021-05-11T15:12:40 IST" duration-ms="4263" status="PASS">
+        <test-method signature="signinTest()[pri:2, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:25 IST" name="signinTest" finished-at="2021-05-14T22:05:29 IST" duration-ms="3859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signinTest -->
-        <test-method signature="addressTest()[pri:3, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:40 IST" name="addressTest" finished-at="2021-05-11T15:12:43 IST" duration-ms="3385" status="PASS">
+        <test-method signature="addressTest()[pri:3, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:29 IST" name="addressTest" finished-at="2021-05-14T22:05:33 IST" duration-ms="3357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressTest -->
-        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:44 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-11T15:12:53 IST" duration-ms="8415" status="PASS">
+        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:33 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-14T22:05:42 IST" duration-ms="8197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAddressTest -->
-        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:12:53 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-11T15:13:00 IST" duration-ms="7374" status="PASS">
+        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:42 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-14T22:05:48 IST" duration-ms="6797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAddressTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:datadrivenframework.test.LoginTest@4c37b5b]" started-at="2021-05-11T15:13:00 IST" name="tearDown" finished-at="2021-05-11T15:13:01 IST" duration-ms="998" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:48 IST" name="tearDown" finished-at="2021-05-14T22:05:49 IST" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -11,5 +11,7 @@ public class UIconstants {
 	public static final String BASE_URL = "baseUrl";
 	
 	public static final String FILE_PATH = "\\src\\test\\resources\\config\\config.properties";
+	
+	public static final String USER_DIR = System.getProperty("user.dir");
 
 }
