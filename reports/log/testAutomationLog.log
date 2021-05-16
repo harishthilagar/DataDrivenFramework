@@ -1,0 +1,20 @@
+13:03:15 DEBUG  io.github.bonigarcia.wdm.cache.ResolutionCache-checkKeyInResolutionCache  - Resolution chrome=90 in cache (valid until 13:15:13 16/05/2021 IST)
+13:03:15 DEBUG  io.github.bonigarcia.wdm.cache.ResolutionCache-checkKeyInResolutionCache  - Resolution chrome90=90.0.4430.24 in cache (valid until 09:48:05 17/05/2021 IST)
+13:03:15 INFO   io.github.bonigarcia.wdm.WebDriverManager-resolveDriverVersion  - Using chromedriver 90.0.4430.24 (resolved driver for Chrome 90)
+13:03:15 TRACE  io.github.bonigarcia.wdm.cache.CacheHandler-getDriverFromCache  - Checking if chromedriver exists in cache
+13:03:15 TRACE  io.github.bonigarcia.wdm.cache.CacheHandler-filterCacheBy  - Filter cache by chromedriver -- input list [C:\Users\haris\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe, C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe, C:\Users\haris\.cache\selenium\msedgedriver\win64\89.0.774.45\msedgedriver.exe, C:\Users\haris\.cache\selenium\msedgedriver\win64\89.0.774.63\msedgedriver.exe, C:\Users\haris\.cache\selenium\msedgedriver\win64\89.0.774.68\msedgedriver.exe, C:\Users\haris\.cache\selenium\resolution.properties] -- output list [C:\Users\haris\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe, C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+13:03:15 TRACE  io.github.bonigarcia.wdm.cache.CacheHandler-filterCacheBy  - Filter cache by 90.0.4430.24 -- input list [C:\Users\haris\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe, C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] -- output list [C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+13:03:15 TRACE  io.github.bonigarcia.wdm.cache.CacheHandler-filterCacheBy  - Filter cache by WIN -- input list [C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] -- output list [C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+13:03:15 DEBUG  io.github.bonigarcia.wdm.WebDriverManager-manage  - Driver chromedriver 90.0.4430.24 found in cache
+13:03:15 INFO   io.github.bonigarcia.wdm.WebDriverManager-exportDriver  - Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe
+13:03:19 INFO   datadrivenframework.test.BaseTest-getDriver  - Test Sarted
+13:03:19 INFO   datadrivenframework.testMethods.TestMethods-signInBtn  - signin button clicked
+13:03:20 INFO   datadrivenframework.testMethods.TestMethods-signIn  - email and password sended and signedin
+13:03:21 INFO   datadrivenframework.testMethods.TestMethods-addressBtn  - address button clicked
+13:03:21 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - new address button clicked
+13:03:23 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - tc1  address added
+13:03:26 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - new address button clicked
+13:03:29 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - tc2  address added
+13:03:32 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - new address button clicked
+13:03:34 INFO   datadrivenframework.testMethods.TestMethods-addAddress  - tc3  address added
+13:03:38 INFO   datadrivenframework.test.BaseTest-closeDriver  - Test Finished
