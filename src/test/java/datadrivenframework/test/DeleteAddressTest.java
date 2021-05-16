@@ -8,10 +8,7 @@ import org.testng.annotations.Test;
 
 import datadrivenframework.factory.PageProvider;
 import datadrivenframework.listeners.TestListener;
-import datadrivenframework.pageobjects.AddressPage;
-import datadrivenframework.pageobjects.DestroyAddress;
-import datadrivenframework.pageobjects.HomePage;
-import datadrivenframework.pageobjects.LoginPage;
+import datadrivenframework.testMethods.TestMethods;
 import lombok.extern.slf4j.Slf4j;
 
 @Listeners(TestListener.class)
@@ -20,7 +17,7 @@ public class DeleteAddressTest extends BaseTest {
 
 	WebDriver driver;
 	PageProvider provider;
-	LoginTest login = new LoginTest();
+	TestMethods testMethod = new TestMethods();
 
 	@BeforeClass
 	public void setup() {
@@ -29,33 +26,23 @@ public class DeleteAddressTest extends BaseTest {
 	}
 
 	@Test(priority = 1)
-	public void loginTest() {
-		HomePage homepage = provider.getHomePage();
-		homepage.signIn();
-		log.info("signin button clicked");
+	public void logIn() {
+		testMethod.signInBtn(provider);
 	}
 
 	@Test(priority = 2)
-	public void signinTest() {
-		LoginPage loginPage = provider.getLoginPage();
-		loginPage.logIn();
-		log.info("email and password sended and signedin");
+	public void signIn() {
+		testMethod.signIn(provider);
 	}
 
 	@Test(priority = 3)
 	public void addressTest() {
-		AddressPage addressPage = provider.getAddressPage();
-		addressPage.address();
-		log.info("address button clicked");
-		waitForSeconds(3);
+		testMethod.addressBtn(provider);
 	}
 
 	@Test(priority = 4)
-	public void deleteAddress() {
-		DestroyAddress delete = provider.deleteAddress();
-//		delete.deleteAddress("firstName1", "lastName1");
-		delete.deleteAddresses();
-		log.info("Address deleted");
+	public void deleteAddressTest() {
+		testMethod.deleteAddress(provider);
 	}
 
 	@AfterClass

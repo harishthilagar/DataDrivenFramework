@@ -20,6 +20,7 @@ public class DataProvider1 {
 	XSSFSheet ws;
 	String filePath = UIconstants.USER_DIR + "\\src\\test\\resources\\testdata\\TestData.xlsx";
 	LinkedList<LinkedList<String>> addressList;
+	LinkedList<String> temp ;
 	
     @DataProvider(name ="addressDataProvider")
 	public Iterator<Object> getExcelSheetData() {
@@ -34,19 +35,19 @@ public class DataProvider1 {
 					Iterator<Row> ri = ws.rowIterator();
 					Row header = ri.next();
 					while (ri.hasNext()) {
-						LinkedList<String> temp = new LinkedList<String>();
 						Row contentRow = ri.next();
 						Iterator<Cell> ci = contentRow.cellIterator();
 						if (ci.next().getStringCellValue().equalsIgnoreCase("Yes")) {
+							temp = new LinkedList<String>();
 							while (ci.hasNext()) {
 								Cell currentCell = ci.next();
 								String cellValue = currentCell.getStringCellValue();
 								temp.add(cellValue);
 							}
+							Object a = new Object();
+							a = (Object) temp;
+							objList.add(a);
 						}
-						Object a = new Object();
-						a = (Object) temp;
-						objList.add(a);
 					}
 
 				}

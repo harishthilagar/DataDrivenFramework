@@ -1,7 +1,5 @@
 package datadrivenframework.reports;
 
-import java.util.HashMap;
-
 import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentTestManager {

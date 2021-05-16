@@ -1,62 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-14T22:05:11 IST" name="Default suite" finished-at="2021-05-14T22:05:49 IST" duration-ms="38360">
+  <suite started-at="2021-05-16T12:15:11 IST" name="Default suite" finished-at="2021-05-16T12:15:40 IST" duration-ms="28387">
     <groups>
     </groups>
-    <test started-at="2021-05-14T22:05:11 IST" name="Default test" finished-at="2021-05-14T22:05:49 IST" duration-ms="38360">
-      <class name="datadrivenframework.test.LoginTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:11 IST" name="setup" finished-at="2021-05-14T22:05:25 IST" duration-ms="13921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3cf55e0c]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-05-16T12:15:11 IST" name="Default test" finished-at="2021-05-16T12:15:40 IST" duration-ms="28387">
+      <class name="datadrivenframework.test.DeleteAddressTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:11 IST" name="setup" finished-at="2021-05-16T12:15:17 IST" duration-ms="5964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:25 IST" name="loginTest" finished-at="2021-05-14T22:05:25 IST" duration-ms="357" status="PASS">
+        <test-method signature="logIn()[pri:1, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:17 IST" name="logIn" finished-at="2021-05-16T12:15:18 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="signinTest()[pri:2, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:25 IST" name="signinTest" finished-at="2021-05-14T22:05:29 IST" duration-ms="3859" status="PASS">
+        </test-method> <!-- logIn -->
+        <test-method signature="signIn()[pri:2, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:18 IST" name="signIn" finished-at="2021-05-16T12:15:20 IST" duration-ms="2108" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signinTest -->
-        <test-method signature="addressTest()[pri:3, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:29 IST" name="addressTest" finished-at="2021-05-14T22:05:33 IST" duration-ms="3357" status="PASS">
+        </test-method> <!-- signIn -->
+        <test-method signature="addressTest()[pri:3, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:20 IST" name="addressTest" finished-at="2021-05-16T12:15:20 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressTest -->
-        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:33 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-14T22:05:42 IST" duration-ms="8197" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[tc1, firstName1, lastName1, address1, city1, a1234]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="deleteAddressTest()[pri:4, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:20 IST" name="deleteAddressTest" finished-at="2021-05-16T12:15:39 IST" duration-ms="19139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAddressTest -->
-        <test-method signature="addAddressTest(java.util.LinkedList)[pri:4, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:42 IST" name="addAddressTest" data-provider="addressDataProvider" finished-at="2021-05-14T22:05:48 IST" duration-ms="6797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[tc2, firstName2, lastName2, address2, city2, b1234]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAddressTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:datadrivenframework.test.LoginTest@75e01201]" started-at="2021-05-14T22:05:48 IST" name="tearDown" finished-at="2021-05-14T22:05:49 IST" duration-ms="620" status="PASS">
+        </test-method> <!-- deleteAddressTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:datadrivenframework.test.DeleteAddressTest@165b2f7f]" started-at="2021-05-16T12:15:39 IST" name="tearDown" finished-at="2021-05-16T12:15:40 IST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- datadrivenframework.test.LoginTest -->
+      </class> <!-- datadrivenframework.test.DeleteAddressTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
