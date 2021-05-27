@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-      <class name="datadrivenframework.test.LoginTest"/>
+      <class name="datadrivenframework.test.AddAddressTest"/>
    <!--   <class name="datadrivenframework.test.DeleteAddressTest"/>  -->
     </classes>
   </test> <!-- Test -->
